@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ViewController.fetchAndSetResults() -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "results as! [Recipe]">
+            </PersistentString>
+            <PersistentString
+               value = "([Recipez.Recipe])self.recipes">
+            </PersistentString>
+            <PersistentString
+               value = "([Recipez.Recipe])results">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CreatRecipeVC.createRecipe(AnyObject!) -&gt; ():CreatRecipeVC.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
