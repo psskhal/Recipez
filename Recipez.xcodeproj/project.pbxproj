@@ -13,6 +13,9 @@
 		B23CA65D1C4CE97700B54568 /* Recipez.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B23CA65B1C4CE97700B54568 /* Recipez.xcdatamodeld */; };
 		B23CA65F1C4CE97700B54568 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B23CA65E1C4CE97700B54568 /* Assets.xcassets */; };
 		B23CA6621C4CE97700B54568 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B23CA6601C4CE97700B54568 /* LaunchScreen.storyboard */; };
+		B23CA66E1C4CFA2700B54568 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23CA66C1C4CFA2700B54568 /* Recipe+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		B23CA66F1C4CFA2700B54568 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23CA66D1C4CFA2700B54568 /* Recipe.swift */; settings = {ASSET_TAGS = (); }; };
+		B23CA6711C4D003A00B54568 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23CA6701C4D003A00B54568 /* RecipeCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		B23CA65E1C4CE97700B54568 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B23CA6611C4CE97700B54568 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B23CA6631C4CE97700B54568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B23CA66C1C4CFA2700B54568 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Recipe+CoreDataProperties.swift"; path = "../Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B23CA66D1C4CFA2700B54568 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = ../Recipe.swift; sourceTree = "<group>"; };
+		B23CA6701C4D003A00B54568 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		B23CA6531C4CE97700B54568 /* Recipez */ = {
 			isa = PBXGroup;
 			children = (
+				B23CA6691C4CF9A100B54568 /* Model */,
+				B23CA66B1C4CF9B900B54568 /* View */,
+				B23CA66A1C4CF9AE00B54568 /* Controller */,
 				B23CA6541C4CE97700B54568 /* AppDelegate.swift */,
-				B23CA6561C4CE97700B54568 /* ViewController.swift */,
-				B23CA6581C4CE97700B54568 /* Main.storyboard */,
 				B23CA65E1C4CE97700B54568 /* Assets.xcassets */,
-				B23CA6601C4CE97700B54568 /* LaunchScreen.storyboard */,
 				B23CA6631C4CE97700B54568 /* Info.plist */,
 				B23CA65B1C4CE97700B54568 /* Recipez.xcdatamodeld */,
 			);
 			path = Recipez;
+			sourceTree = "<group>";
+		};
+		B23CA6691C4CF9A100B54568 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B23CA66C1C4CFA2700B54568 /* Recipe+CoreDataProperties.swift */,
+				B23CA66D1C4CFA2700B54568 /* Recipe.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B23CA66A1C4CF9AE00B54568 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B23CA6561C4CE97700B54568 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B23CA66B1C4CF9B900B54568 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B23CA6581C4CE97700B54568 /* Main.storyboard */,
+				B23CA6601C4CE97700B54568 /* LaunchScreen.storyboard */,
+				B23CA6701C4D003A00B54568 /* RecipeCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +171,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B23CA6571C4CE97700B54568 /* ViewController.swift in Sources */,
+				B23CA66E1C4CFA2700B54568 /* Recipe+CoreDataProperties.swift in Sources */,
 				B23CA6551C4CE97700B54568 /* AppDelegate.swift in Sources */,
+				B23CA6711C4D003A00B54568 /* RecipeCell.swift in Sources */,
 				B23CA65D1C4CE97700B54568 /* Recipez.xcdatamodeld in Sources */,
+				B23CA66F1C4CFA2700B54568 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +325,7 @@
 				B23CA6681C4CE97700B54568 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
